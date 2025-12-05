@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TechFix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <header>
+        <nav class="navbar">
+           <a href="index.html" class="logo">TechFix</a>
+
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Rreth nesh</a></li>
+                <li><a href="services.html">Sherbimet</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="login.html" class="active btn-login">Login</a></li>
+            </ul>
+
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- ========== LOGIN FORM ========== -->
+    <section class="login-section">
+        <h1>Kyçu në llogarinë tënde</h1>
+
+        <form id="loginForm" class="login-form">
+
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Fjalëkalimi" required>
+
+            <button type="submit" class="btn-primary">Kyçu</button>
+
+        </form>
+
+        <p class="register-link">
+            Nuk ke llogari? <a href="register.html">Regjistrohu këtu</a>
+        </p>
+
+        <p id="loginMessage" class="success-message" style="display:none;">
+            ✔ U kyçe me sukses!
+        </p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
