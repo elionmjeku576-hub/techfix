@@ -1,0 +1,415 @@
+/* ================== RESET BAZË ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================== TRUPI I FAQES ================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+/* ================== NAVBAR ================== */
+header {
+    background-color: #0A3D62;
+    padding: 15px 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+/* MENU LISTA */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #1B9CFC;
+}
+
+/* LOGIN BUTTON */
+.btn-login {
+    background-color: #1B9CFC;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.btn-login:hover {
+    background-color: #3AB0FF;
+}
+
+/* Menü për telefon (hamburger) */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+    height: 80vh;
+    background: url("../img/tech-bg.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #1B9CFC;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #3AB0FF;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none; /* fshihen në telefon */
+        flex-direction: column;
+        background-color: #0A3D62;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+/* ================== ABOUT SECTION ================== */
+.about-section {
+    width: 90%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+    color: #0A3D62;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-section h2 {
+    color: #0A3D62;
+    margin-top: 25px;
+    font-size: 26px;
+}
+
+.about-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.about-list li {
+    background-color: #1B9CFC;
+    color: white;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+/* ================== SERVICES PAGE ================== */
+
+.services-section {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.services-section h1 {
+    color: #0A3D62;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.service-desc {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* KONTAINERI I SHERBIMEVE */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* KARTA E SHERBIMIT */
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card h3 {
+    color: #0A3D62;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+/* ================== SERVICE DETAILS PAGE ================== */
+
+.details-section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.details-container {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.details-img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.details-text {
+    width: 60%;
+}
+
+.details-text h1 {
+    color: #0A3D62;
+    margin-bottom: 15px;
+}
+
+.details-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.details-text h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1B9CFC;
+}
+
+.details-text ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.details-text li {
+    background-color: #1B9CFC;
+    color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .details-img,
+    .details-text {
+        width: 100%;
+    }
+}
+/* ================== CONTACT PAGE ================== */
+.contact-section {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #0A3D62;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #444;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+.success-message {
+    margin-top: 20px;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* ================== LOGIN PAGE ================== */
+.login-section {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.login-section h1 {
+    color: #0A3D62;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.register-link a {
+    color: #1B9CFC;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* ================== REGISTER PAGE ================== */
+.register-section {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.register-section h1 {
+    color: #0A3D62;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+.service-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
