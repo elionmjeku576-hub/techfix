@@ -1,7 +1,7 @@
-// CONTACT FORM VALIDATION
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
 
-    e.preventDefault(); // Ndalon dërgimin e menjëhershëm
+    e.preventDefault(); 
 
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
@@ -14,16 +14,15 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
     document.getElementById("successMessage").style.display = "block";
 
-    // Pas 2 sekondave pastrohet forma
+    
     setTimeout(() => {
         document.getElementById("contactForm").reset();
     }, 2000);
 });
-// LOGIN FORM VALIDATION
+
 document.getElementById("loginForm").addEventListener("submit", function (e) {
 
-    e.preventDefault(); // Ndalon dërgimin e formës
-
+    e.preventDefault();
     let email = document.getElementById("loginEmail").value.trim();
     let pass = document.getElementById("loginPassword").value.trim();
 
@@ -34,12 +33,12 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     document.getElementById("loginMessage").style.display = "block";
 
-    // Pas 1.5 sekondave pastrohen fushat
+   
     setTimeout(() => {
         document.getElementById("loginForm").reset();
     }, 1500);
 });
-// REGISTER FORM VALIDATION
+N
 document.getElementById("registerForm").addEventListener("submit", function (e) {
 
     e.preventDefault();
